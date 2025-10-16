@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>아영이와 대화하기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="player-avatar" src="assets/img/player.png" alt="플레이어 아바타" />
+      <div class="brand-text">
+        <h1>아영이와 대화하기</h1>
+        <small>Player: 나</small>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="btnWOW">뀨 ✨</button>
+      <button id="btnSave">저장</button>
+      <button id="btnLoad">불러오기</button>
+      <button id="btnReset">초기화</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="character-list">
+      <div class="character wowable" data-id="jo">
+        <img src="assets/img/jo_neutral.png" alt="jo" />
+        <p>평범한 아영*</p>
+      </div>
+      <div class="character wowable" data-id="a">
+        <img src="assets/img/a_neutral.png" alt="a" />
+        <p>귀여운 아영</p>
+      </div>
+      <div class="character wowable" data-id="yeong">
+        <img src="assets/img/yeong_neutral.png" alt="yeong" />
+        <p>사악한 아영-k</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="dialogue" class="dialogue hidden wowable">
+    <div id="affectionPanel" class="affection-panel">❤️ 0</div>
+    <div class="dlg-avatar-wrap">
+      <img id="dlgAvatar" src="" alt="avatar" />
+    </div>
+    <div class="text-box">
+      <p id="dialogueText"></p>
+      <div id="choiceBox" class="choice-container"></div>
+    </div>
+  </div>
+
+  <div id="ending" class="ending hidden">
+    <div class="ending-card">
+      <img id="endingImg" />
+      <h2 id="endingTitle"></h2>
+      <p id="endingDesc"></p>
+      <button id="btnRestart">처음으로</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
